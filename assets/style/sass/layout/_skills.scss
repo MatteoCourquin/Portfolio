@@ -1,0 +1,78 @@
+// **** SKILLS **** //
+// ================ //
+
+.skills{
+    .skills_container{
+        @media screen and (max-width:600px){
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+    .skills_container_dev , .skills_container_others{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 20px;
+        @media screen and (max-width:600px){
+            grid-template-columns: 1fr;
+        }
+    }
+    .skills_items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            fill: var(--white);
+            width: 30%;
+            cursor: pointer;
+            &:hover{
+                transition: var(--transition);
+                fill: var(--blue);
+            }
+        }
+        .details_skills{
+            display: none;
+            font-size: 20px;
+        }
+        .details_skills.active{
+            display: block;
+            animation: show_skills 1s forwards;
+        }
+    }
+    .separation{
+        width: 90%;
+        height: 1px;
+        background: var(--white);
+        margin: 40px 5%;
+        @media screen and (max-width:600px) {
+            width: 1px;
+            height: 600px;
+        }
+    }
+    .skills_container_others{
+        svg{
+            .cls-1{
+                fill:none;
+                stroke:var(--white);
+                // stroke-miterlimit:10;
+                stroke-width:22px;
+            }
+            .cls-2{
+                fill: var(--white);
+            }
+            &:hover{
+                transition: 0.3s;
+                .cls-1{
+                    fill:none;
+                    stroke:var(--blue);
+                    // stroke-miterlimit:10;
+                    stroke-width:22px;
+                }
+                .cls-2{
+                    fill: var(--blue);
+                }
+            }
+        }
+    }
+}

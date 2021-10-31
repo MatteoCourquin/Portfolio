@@ -1,0 +1,26 @@
+// **** FOOTER **** //
+// ================ //
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        padding-left: 30px;
+    }
+    .contact{
+        a{
+            display: inline-block;
+            margin: 0 30px 20px 0;
+            line-height: 70px;
+        }
+        svg{
+            width: 40px;
+            fill: var(--white);
+            &:hover{
+                transition: 0.3s;
+                fill: var(--blue);
+            }
+        }
+    }
+}

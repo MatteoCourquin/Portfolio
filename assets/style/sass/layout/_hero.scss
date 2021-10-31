@@ -1,0 +1,86 @@
+// **** HERO **** //
+// ============== //
+
+.hero_container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    height: 100vh;
+    @media screen and (max-width:600px) {
+        grid-template-columns: 100%;
+    }
+    .hero{
+        display: flex;
+        align-items: center;
+
+        .lines{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 40px;
+            .line1{
+                width: 1px;
+                height: 20vh;
+                background: var(--white);
+            }
+            .round{
+                width: 20px;
+                height: 20px;
+                margin: 20px 0;
+                border-radius: 99px;
+                border: 1px solid var(--white);
+            }
+            .line2{
+                width: 1px;
+                height: 20vh;
+                background: var(--white);
+            }
+        }
+        .title{
+            margin-left: 20px;
+            transform: translateY(-200%);
+            p{
+                color: var(--white);
+                font-family: var(--roboto);
+                font-size: 3.4vw;
+                @media screen and (max-width:600px) {
+                    font-size: 5vw;
+                }
+                span{
+                    font-family: var(--indie);
+                }
+            }
+            .title_effect{
+                position: relative;
+                h1{
+                    position: absolute;
+                    color: var(--blue);
+                    font-family: var(--chivo);
+                    font-size: 7vw;
+                    @media screen and (max-width:600px) {
+                        font-size: 12vw;
+                    }
+                }
+                .shadow_effect{
+                    position: absolute;
+                    font-family: var(--chivo);
+                    font-size: 7vw;
+                    color: transparent;
+                    -webkit-text-stroke: 1px;
+                    -webkit-text-stroke-color: var(--white);
+                    transform: translate(5px, 5px);
+                    @media screen and (max-width:600px) {
+                        font-size: 12vw;
+                    }
+                }
+            }
+        }
+    }
+
+    img{
+        width: 100%;
+        @media screen and (max-width:600px) {
+            display: none;
+        }
+    }
+}

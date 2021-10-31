@@ -1,0 +1,10 @@
+// **** HEADER **** //
+// ================ //
+
+#barre{
+    height: 5px;
+    position: fixed;
+    z-index: 999;
+    bottom: top;
+    background: var(--blue);
+}
