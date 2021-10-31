@@ -9,6 +9,16 @@
   --transition: 0.3s;
 }
 
+@keyframes show_skills {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
 *, *::after, *::after {
   margin: 0;
   padding: 0;
@@ -249,7 +259,7 @@ nav .liste_nav .item_nav:nth-child(4) {
 }
 @media screen and (max-width: 600px) {
   .hero_container .hero .title .title_effect h1 {
-    font-size: 12vw;
+    font-size: 10vw;
   }
 }
 .hero_container .hero .title .title_effect .shadow_effect {
@@ -263,7 +273,7 @@ nav .liste_nav .item_nav:nth-child(4) {
 }
 @media screen and (max-width: 600px) {
   .hero_container .hero .title .title_effect .shadow_effect {
-    font-size: 12vw;
+    font-size: 10vw;
   }
 }
 .hero_container img {
@@ -279,7 +289,7 @@ nav .liste_nav .item_nav:nth-child(4) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .iDo_container {
     grid-template-columns: 1fr;
   }
@@ -310,6 +320,10 @@ nav .liste_nav .item_nav:nth-child(4) {
   color: var(--blue);
 }
 
+.about .about_item {
+  padding: 30px;
+}
+
 @media screen and (max-width: 600px) {
   .skills .skills_container {
     display: flex;
@@ -336,7 +350,6 @@ nav .liste_nav .item_nav:nth-child(4) {
 .skills .skills_items svg {
   fill: var(--white);
   width: 30%;
-  cursor: pointer;
 }
 .skills .skills_items svg:hover {
   transition: var(--transition);

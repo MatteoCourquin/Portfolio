@@ -1,6 +1,7 @@
 // **** VARIABLES **** //
 // =================== //
 @import "./abstracts/variables";
+@import "./abstracts/functions";
 
 // **** RESET **** //
 // =============== //
@@ -17,6 +18,7 @@
 @import "./layout/nav";
 @import "./layout/hero";
 @import "./layout/iDo";
+@import "./layout/about";
 @import "./layout/skills";
 @import "./layout/projects";
 @import "./layout/footer";
