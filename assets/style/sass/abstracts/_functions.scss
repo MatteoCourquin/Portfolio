@@ -1,4 +1,4 @@
-@keyframes show_skills {
+@keyframes show_skills_left {
     0%{
         opacity: 0;
         transform: translateX(-30px);
@@ -6,5 +6,15 @@
     100%{
         opacity: 1;
         transform: translateX(10px);
+    }
+}
+@keyframes show_skills_top {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(10px);
     }
 }

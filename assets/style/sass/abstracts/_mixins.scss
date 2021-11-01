@@ -1,0 +1,16 @@
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+};
+
+@mixin m {
+    @media screen and (max-width: 600px){
+        @content
+    }
+};
+
+@mixin l {
+    @media screen and (max-width: 800px){
+        @content
+    }
+};

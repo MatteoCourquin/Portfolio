@@ -6,10 +6,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    @media screen and (max-width:800px) {
+    @include m {
         grid-template-columns: 1fr;
     }
-    @media screen and (max-width:600px) {
+    @include m {
         padding: 30px;
     }
     .iDo_items{

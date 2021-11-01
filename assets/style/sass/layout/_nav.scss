@@ -19,14 +19,14 @@ nav{
             fill: var(--white);
             transition: var(--transition);
         }
-        @media screen and (max-width:600px) {
+        @include m {
             display: none;
         }
     }
     .liste_nav{
         display: flex;
         align-items: center;
-        @media screen and (max-width:600px) {
+        @include m {
             position: absolute;
             left: 50%;
             transform: translate(-50%);
@@ -37,7 +37,7 @@ nav{
             list-style-type: none;
             padding: 0 20px 0 20px;
             cursor: pointer;
-            @media screen and (max-width:600px) {
+            @include m {
                 margin-bottom: 10px;
                 padding: 5px;
                 button{
@@ -47,13 +47,13 @@ nav{
             }
         }
         .item_nav:not(:nth-child(4)){
-            @media screen and (max-width:600px) {
+            @include m {
             border-right: 1px solid var(--white);
             }
         }
         .item_nav:nth-child(4){
             border-left: 1px solid var(--white);
-            @media screen and (max-width:600px) {
+            @include m {
                 border: none;
             }
         }
