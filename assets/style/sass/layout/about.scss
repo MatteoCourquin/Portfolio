@@ -1,5 +1,9 @@
 .about{
     .about_item{
-        padding: 30px;
+        padding: 30px 80px;
+        @media screen and (max-width: 600px) {
+            padding: 30px 30px;
+            
+        }
     }
 }
