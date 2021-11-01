@@ -43,7 +43,7 @@ body {
 h2 {
   font-family: "Chivo", sans-serif;
   padding-top: 80px;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--blue);
   margin: 50px;
 }
@@ -189,6 +189,32 @@ nav .liste_nav {
     background: var(--black);
   }
 }
+nav .liste_nav .change-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0 10px;
+  cursor: pointer;
+}
+nav .liste_nav .change-color::before, nav .liste_nav .change-color ::after {
+  content: none;
+}
+nav .liste_nav .change-color::after {
+  content: none;
+}
+nav .liste_nav .change-color::before {
+  content: none;
+}
+nav .liste_nav .violet {
+  background: #9984D4;
+}
+nav .liste_nav .pink {
+  background: #FF4D80;
+}
+nav .liste_nav .blue {
+  background: #0075F2;
+}
 nav .liste_nav .item_nav {
   list-style-type: none;
   padding: 0 20px 0 20px;
@@ -209,11 +235,11 @@ nav .liste_nav .item_nav {
     border-right: 1px solid var(--white);
   }
 }
-nav .liste_nav .item_nav:nth-child(4) {
+nav .liste_nav .item_nav:nth-child(7) {
   border-left: 1px solid var(--white);
 }
 @media screen and (max-width: 600px) {
-  nav .liste_nav .item_nav:nth-child(4) {
+  nav .liste_nav .item_nav:nth-child(7) {
     border: none;
   }
 }

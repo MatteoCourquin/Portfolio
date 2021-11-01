@@ -38,8 +38,34 @@ logoDev.forEach(item => {
 // **** COPYRIGHT ****
 // ===================
 var now = new Date()
-var year = now.getFullYear()
+var year = now.getFullYear() 
 var copyright = document.querySelector('.copyright')
 // year.toString();
 
 copyright.textContent = (year);
+
+
+
+// **** COLOR ****
+// ===================
+let root = document.documentElement;
+let btnColorViolet= document.querySelector('.violet');
+let btnColorPink = document.querySelector('.pink');
+let btnColorBlue = document.querySelector('.blue');
+
+function changeColor() {
+    btnColorViolet.onclick = () => {
+        root.style.setProperty('--blue', "#9984D4");        
+    };
+    btnColorPink.onclick = () => {  
+        root.style.setProperty('--blue', "#FF4D80");        
+    };
+    btnColorBlue.onclick = () => {
+        root.style.setProperty('--blue', "#0075F2");        
+    };
+};
+
+btnColorViolet.addEventListener('click', changeColor);
+btnColorPink.addEventListener('click', changeColor);
+btnColorBlue.addEventListener('click', changeColor);
+

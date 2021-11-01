@@ -33,6 +33,31 @@ nav{
             top: 10px;
             background: var(--black);
         }
+        .change-color{
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            padding: 0;
+            margin: 0 10px;
+            cursor: pointer;
+            &::before,::after{
+                content: none;
+            }
+            &::after{
+                content: none;
+            }&::before{
+                content: none;
+            }
+        }
+        .violet{
+            background: #9984D4;
+        }
+        .pink{
+            background: #FF4D80;
+        }
+        .blue{
+            background: #0075F2;
+        }
         .item_nav{
             list-style-type: none;
             padding: 0 20px 0 20px;
@@ -51,7 +76,7 @@ nav{
             border-right: 1px solid var(--white);
             }
         }
-        .item_nav:nth-child(4){
+        .item_nav:nth-child(7){
             border-left: 1px solid var(--white);
             @include m {
                 border: none;
