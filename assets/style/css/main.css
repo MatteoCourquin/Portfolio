@@ -60,6 +60,20 @@ h3 {
   font-weight: 400;
 }
 
+h3 {
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+}
+
+h4 {
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+}
+
 p {
   color: var(--white);
   text-align: justify;
@@ -74,6 +88,7 @@ a {
   text-decoration: none;
   font-size: 2em;
   padding: 0;
+  cursor: pointer;
 }
 a::after {
   content: "";
@@ -408,30 +423,25 @@ nav .liste_nav .item_nav:nth-child(4) {
   }
 }
 
-.projects {
-  padding: 20px;
-}
 .projects .project_container {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 .projects .project_container .project_items {
+  margin: 20px;
   width: 320px;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
 }
 .projects .project_container .project_items img {
   width: 100%;
-  cursor: pointer;
 }
 .projects .project_container .project_items a {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 footer {

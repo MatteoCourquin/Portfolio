@@ -2,26 +2,22 @@
 // ================= //
 
 .projects{
-    padding: 20px;
     .project_container{
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
         .project_items{
-            width: 320px;
-            height: fit-content;
+            margin: 20px;
+            @include size (320px, fit-content);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-end;
             img{
                 width: 100%;
-                cursor: pointer;
             }
             a{
-                margin-top: 20px;
+                margin: 20px 0;
             }
         }
     }

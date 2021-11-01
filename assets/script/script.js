@@ -1,3 +1,6 @@
+// **** PROGRESSION LINE TOP ****
+// ==============================
+
 window.onload = () => {
     window.addEventListener('scroll', () => {
         let hauteur = document.documentElement.scrollHeight - window.innerHeight;
@@ -10,6 +13,10 @@ window.onload = () => {
     });
 };
 
+
+
+// **** SHOW SKILLS ****
+// ===================
 const logoDev = document.querySelectorAll('.skills_items')
 let detailSkills = document.querySelectorAll('.details_skills')
 
@@ -18,7 +25,6 @@ function hello() {
         itemSkills.classList.add('active')
     });
 }
-
 logoDev.forEach(item => {
     item.addEventListener('mouseenter', function () {
         detailSkills.forEach(itemSkills => {
@@ -26,3 +32,14 @@ logoDev.forEach(item => {
         });
     })
 });
+
+
+
+// **** COPYRIGHT ****
+// ===================
+var now = new Date()
+var year = now.getFullYear()
+var copyright = document.querySelector('.copyright')
+// year.toString();
+
+copyright.textContent = (year);
