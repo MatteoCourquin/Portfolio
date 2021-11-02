@@ -81,3 +81,25 @@
         }
     }
 }
+
+
+[class*="anim_scroll"]{
+    opacity: 0;
+    transform: translateY(-30px);
+    z-index: 1;
+}
+.anim_scroll1{
+    transition-delay: 0s;
+}
+.anim_scroll2{
+    transition-delay: 0.2s;
+}
+.anim_scroll3{
+    transition-delay: 0.3s;
+}
+.show_scroll{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1s;
+    z-index: 1;
+}
