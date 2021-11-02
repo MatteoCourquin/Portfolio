@@ -5,7 +5,7 @@ h2{
     font-family: 'Chivo', sans-serif;
     padding-top: 80px;
     font-size: 3rem;
-    color: var(--blue);
+    color: var(--mainColor);
     margin: 50px;
     @media screen and (max-width:600px) {
         font-size: 4em;
@@ -50,7 +50,7 @@ a{
         margin: 2px auto 0 auto;
         height: 1px;
         border-radius: 2px;
-        background: var(--blue);
+        background: var(--mainColor);
         transition: width 0.2s ease-out;
     }
     &:hover::after{
