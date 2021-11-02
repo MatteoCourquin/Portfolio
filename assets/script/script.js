@@ -66,6 +66,9 @@ function changeColor() {
 };
 
 btnColorViolet.addEventListener('click', changeColor);
+btnColorViolet.addEventListener('touchstart', changeColor);
 btnColorPink.addEventListener('click', changeColor);
+btnColorPink.addEventListener('touchstart', changeColor);
 btnColorBlue.addEventListener('click', changeColor);
+btnColorBlue.addEventListener('touchstart', changeColor);
 
