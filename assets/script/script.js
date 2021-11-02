@@ -66,14 +66,24 @@ let btnColorBlue = document.querySelector('.blue');
 };*/
 
 function changeColor(color) {
+    console.log('hey')
     root.style.setProperty('--mainColor', color)
    
 };
 
-btnColorViolet.addEventListener('click', changeColor("#9984D4"));
+btnColorViolet.addEventListener('click', function(){
+    changeColor("#9984D4")
+})
+btnColorPink.addEventListener('click', function(){
+    changeColor("#FF4D80")
+});
+btnColorBlue.addEventListener('click', function() {
+    changeColor("#0075F2")
+});
+
 // btnColorViolet.addEventListener('touchstart', changeColor);
-btnColorPink.addEventListener('click', changeColor("#FF4D80"));
+
 // btnColorPink.addEventListener('touchstart', changeColor);
-btnColorBlue.addEventListener('click', changeColor("#0075F2"));
+
 // btnColorBlue.addEventListener('touchstart', changeColor);
 
