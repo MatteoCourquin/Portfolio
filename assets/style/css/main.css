@@ -66,13 +66,6 @@ h3 {
   font-weight: 400;
 }
 
-h4 {
-  color: var(--white);
-  font-family: "Roboto", sans-serif;
-  font-size: 2em;
-  font-weight: 800;
-}
-
 p {
   color: var(--white);
   text-align: justify;
@@ -154,8 +147,9 @@ button:hover:before {
 .change-color-container {
   position: absolute;
   position: fixed;
+  display: flex;
   right: 20px;
-  bottom: 5px;
+  bottom: 10px;
 }
 .change-color-container .change-color {
   width: 20px;
@@ -164,15 +158,6 @@ button:hover:before {
   padding: 0;
   margin: 0 10px;
   cursor: pointer;
-}
-.change-color-container .change-color::before, .change-color-container .change-color ::after {
-  content: none;
-}
-.change-color-container .change-color::after {
-  content: none;
-}
-.change-color-container .change-color::before {
-  content: none;
 }
 .change-color-container .violet {
   background: #9984D4;
@@ -471,6 +456,9 @@ nav .liste_nav .item_nav:nth-child(7) {
 }
 .projects .project_container .project_items img {
   width: 100%;
+}
+.projects .project_container .project_items h3 {
+  font-size: 3em;
 }
 .projects .project_container .project_items a {
   margin: 20px 0;

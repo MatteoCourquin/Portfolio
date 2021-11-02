@@ -12,8 +12,9 @@
 .change-color-container{
     position: absolute;
     position: fixed;
+    display: flex;
     right: 20px;
-    bottom: 5px;
+    bottom: 10px;
     .change-color{
         width: 20px;
         height: 20px;
@@ -21,14 +22,6 @@
         padding: 0;
         margin: 0 10px;
         cursor: pointer;
-        &::before,::after{
-            content: none;
-        }
-        &::after{
-            content: none;
-        }&::before{
-            content: none;
-        }
     }
     .violet{
         background: #9984D4;

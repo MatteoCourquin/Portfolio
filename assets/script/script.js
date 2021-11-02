@@ -47,26 +47,15 @@ copyright.textContent = (year);
 
 
 // **** COLOR ****
-// ===================
+// ===============
 let root = document.documentElement;
 let btnColorViolet= document.querySelector('.violet');
 let btnColorPink = document.querySelector('.pink');
 let btnColorBlue = document.querySelector('.blue');
 
-/*function changeColor() {
-    btnColorViolet.onclick = () => {
-        root.style.setProperty('--mainColor', "#9984D4");        
-    };
-    btnColorPink.onclick = () => {  
-        root.style.setProperty('--mainColor', "#FF4D80");        
-    };
-    btnColorBlue.onclick = () => {
-        root.style.setProperty('--mainColor', "#0075F2");        
-    };
-};*/
 
 function changeColor(color) {
-    console.log('hey')
+    // console.log('change color !')
     root.style.setProperty('--mainColor', color)
    
 };
@@ -80,10 +69,3 @@ btnColorPink.addEventListener('click', function(){
 btnColorBlue.addEventListener('click', function() {
     changeColor("#0075F2")
 });
-
-// btnColorViolet.addEventListener('touchstart', changeColor);
-
-// btnColorPink.addEventListener('touchstart', changeColor);
-
-// btnColorBlue.addEventListener('touchstart', changeColor);
-
