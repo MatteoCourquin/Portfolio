@@ -51,7 +51,7 @@
                 position: relative;
                 h1{
                     position: absolute;
-                    color: var(--blue);
+                    color: var(--mainColor);
                     font-family: var(--chivo);
                     font-size: 7vw;
                     @include m {

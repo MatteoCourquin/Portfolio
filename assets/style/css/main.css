@@ -1,6 +1,5 @@
 :root {
-  --blue: #0075F2;
-  --blueDarken: #004a99;
+  --mainColor: #0075F2;
   --white: #f1f1F1;
   --black: #000;
   --chivo: "Chivo", sans-serif;
@@ -149,7 +148,7 @@ button:hover:before {
   position: fixed;
   z-index: 999;
   bottom: top;
-  background: var(--blue);
+  background: var(--mainColor);
 }
 
 .change-color-container {
@@ -196,7 +195,7 @@ nav {
   background-color: var(--black);
 }
 nav svg {
-  fill: var(--blue);
+  fill: var(--mainColor);
   width: 80px;
   padding-left: 15px;
 }
@@ -311,7 +310,7 @@ nav .liste_nav .item_nav:nth-child(7) {
 }
 .hero_container .hero .title .title_effect h1 {
   position: absolute;
-  color: var(--blue);
+  color: var(--mainColor);
   font-family: var(--chivo);
   font-size: 7vw;
 }
@@ -369,7 +368,7 @@ nav .liste_nav .item_nav:nth-child(7) {
   font-size: 1em;
   display: inline-block;
   font-weight: 100;
-  color: var(--blue);
+  color: var(--mainColor);
 }
 
 .about .about_item {
@@ -398,8 +397,8 @@ nav .liste_nav .item_nav:nth-child(7) {
 }
 .skills .skills_container svg:hover {
   transition: var(--transition);
-  fill: var(--blue);
-  stroke: var(--blue);
+  fill: var(--mainColor);
+  stroke: var(--mainColor);
 }
 .skills .skills_container_dev, .skills .skills_container_others {
   width: 100%;
@@ -495,7 +494,7 @@ footer .contact svg {
 }
 footer .contact svg:hover {
   transition: 0.3s;
-  fill: var(--blue);
+  fill: var(--mainColor);
 }
 
 /*# sourceMappingURL=main.css.map */

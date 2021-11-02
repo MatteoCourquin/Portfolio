@@ -18,8 +18,8 @@
             // cursor: pointer;
             &:hover{
                 transition: var(--transition);
-                fill: var(--blue);
-                stroke: var(--blue);
+                fill: var(--mainColor);
+                stroke: var(--mainColor);
             }
         }
     }

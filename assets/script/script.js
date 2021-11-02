@@ -55,20 +55,20 @@ let btnColorBlue = document.querySelector('.blue');
 
 function changeColor() {
     btnColorViolet.onclick = () => {
-        root.style.setProperty('--blue', "#9984D4");        
+        root.style.setProperty('--mainColor', "#9984D4");        
     };
     btnColorPink.onclick = () => {  
-        root.style.setProperty('--blue', "#FF4D80");        
+        root.style.setProperty('--mainColor', "#FF4D80");        
     };
     btnColorBlue.onclick = () => {
-        root.style.setProperty('--blue', "#0075F2");        
+        root.style.setProperty('--mainColor', "#0075F2");        
     };
 };
 
 btnColorViolet.addEventListener('click', changeColor);
-btnColorViolet.addEventListener('touchstart', changeColor);
+// btnColorViolet.addEventListener('touchstart', changeColor);
 btnColorPink.addEventListener('click', changeColor);
-btnColorPink.addEventListener('touchstart', changeColor);
+// btnColorPink.addEventListener('touchstart', changeColor);
 btnColorBlue.addEventListener('click', changeColor);
-btnColorBlue.addEventListener('touchstart', changeColor);
+// btnColorBlue.addEventListener('touchstart', changeColor);
 
