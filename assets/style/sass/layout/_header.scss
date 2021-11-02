@@ -8,3 +8,35 @@
     bottom: top;
     background: var(--blue);
 }
+
+.change-color-container{
+    position: absolute;
+    position: fixed;
+    right: 20px;
+    bottom: 5px;
+    .change-color{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        padding: 0;
+        margin: 0 10px;
+        cursor: pointer;
+        &::before,::after{
+            content: none;
+        }
+        &::after{
+            content: none;
+        }&::before{
+            content: none;
+        }
+    }
+    .violet{
+        background: #9984D4;
+    }
+    .pink{
+        background: #FF4D80;
+    }
+    .blue{
+        background: #0075F2;
+    }
+}

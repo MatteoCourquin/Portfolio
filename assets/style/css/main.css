@@ -152,6 +152,39 @@ button:hover:before {
   background: var(--blue);
 }
 
+.change-color-container {
+  position: absolute;
+  position: fixed;
+  right: 20px;
+  bottom: 5px;
+}
+.change-color-container .change-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.change-color-container .change-color::before, .change-color-container .change-color ::after {
+  content: none;
+}
+.change-color-container .change-color::after {
+  content: none;
+}
+.change-color-container .change-color::before {
+  content: none;
+}
+.change-color-container .violet {
+  background: #9984D4;
+}
+.change-color-container .pink {
+  background: #FF4D80;
+}
+.change-color-container .blue {
+  background: #0075F2;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -188,32 +221,6 @@ nav .liste_nav {
     top: 10px;
     background: var(--black);
   }
-}
-nav .liste_nav .change-color {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  padding: 0;
-  margin: 0 10px;
-  cursor: pointer;
-}
-nav .liste_nav .change-color::before, nav .liste_nav .change-color ::after {
-  content: none;
-}
-nav .liste_nav .change-color::after {
-  content: none;
-}
-nav .liste_nav .change-color::before {
-  content: none;
-}
-nav .liste_nav .violet {
-  background: #9984D4;
-}
-nav .liste_nav .pink {
-  background: #FF4D80;
-}
-nav .liste_nav .blue {
-  background: #0075F2;
 }
 nav .liste_nav .item_nav {
   list-style-type: none;
@@ -476,12 +483,11 @@ footer {
   align-items: center;
 }
 footer p {
-  padding-left: 30px;
+  padding: 40px 20px;
 }
 footer .contact a {
   display: inline-block;
   margin: 0 30px 20px 0;
-  line-height: 70px;
 }
 footer .contact svg {
   width: 40px;
