@@ -64,6 +64,22 @@ document.querySelectorAll('[class*="anim_scroll"]').forEach(function(r){
 })
 
 
+// **** LOW SCROLL ****
+// ====================
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+
 // **** SHOW SKILLS ****
 // =====================
 const logoDev = document.querySelectorAll('.skills_items')
