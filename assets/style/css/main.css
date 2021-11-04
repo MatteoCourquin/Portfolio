@@ -99,8 +99,8 @@ a:hover::after {
 button {
   transform: translate(0, 0);
   background: var(--mainColor);
-  width: 100px;
-  padding: 5px 30px;
+  width: auto;
+  padding: 8px 30px;
   border: none;
   cursor: pointer;
   color: var(--white);
@@ -220,19 +220,6 @@ nav .liste_nav .item_nav {
   nav .liste_nav .item_nav button {
     width: 60px;
     padding: 5px 10px;
-  }
-}
-@media screen and (max-width: 600px) {
-  nav .liste_nav .item_nav:not(:nth-child(4)) {
-    border-right: 1px solid var(--white);
-  }
-}
-nav .liste_nav .item_nav:nth-child(7) {
-  border-left: 1px solid var(--white);
-}
-@media screen and (max-width: 600px) {
-  nav .liste_nav .item_nav:nth-child(7) {
-    border: none;
   }
 }
 
@@ -388,6 +375,17 @@ nav .liste_nav .item_nav:nth-child(7) {
 @media screen and (max-width: 600px) {
   .about .about_item {
     padding: 30px 30px;
+  }
+}
+.about a, .about button {
+  display: inline-block;
+}
+.about a {
+  margin-left: 80px;
+}
+@media screen and (max-width: 600px) {
+  .about a {
+    padding-left: 30px;
   }
 }
 
