@@ -6,6 +6,7 @@
     grid-template-columns: 60% 40%;
     align-items: center;
     height: 100vh;
+    min-height: 600px;
     @include m {
         grid-template-columns: 100%;
     }

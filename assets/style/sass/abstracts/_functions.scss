@@ -18,3 +18,8 @@
         transform: translateY(10px);
     }
 }
+@keyframes complete_line {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

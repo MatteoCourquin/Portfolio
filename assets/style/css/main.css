@@ -1,3 +1,14 @@
+*, *::after, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: var(--black);
+}
+
 :root {
   --mainColor: #0075F2;
   --white: #f1f1F1;
@@ -28,17 +39,11 @@
     transform: translateY(10px);
   }
 }
-*, *::after, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@keyframes complete_line {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
-
-body {
-  font-size: 62.5%;
-  background-color: var(--black);
-}
-
 h2 {
   font-family: "Chivo", sans-serif;
   padding-top: 80px;
@@ -181,18 +186,25 @@ nav {
   background-color: var(--black);
 }
 nav svg {
-  fill: var(--mainColor);
   width: 80px;
   padding-left: 15px;
-}
-nav svg:hover {
-  fill: var(--white);
-  transition: var(--transition);
 }
 @media screen and (max-width: 600px) {
   nav svg {
     display: none;
   }
+}
+nav svg path {
+  stroke: var(--mainColor);
+  animation: complete_line 4s ease-out forwards;
+}
+nav svg path:nth-child(1) {
+  stroke-dasharray: 1000px;
+  stroke-dashoffset: 1000px;
+}
+nav svg path:nth-child(2) {
+  stroke-dasharray: 700px;
+  stroke-dashoffset: 700px;
 }
 nav .liste_nav {
   display: flex;
@@ -228,6 +240,7 @@ nav .liste_nav .item_nav {
   grid-template-columns: 60% 40%;
   align-items: center;
   height: 100vh;
+  min-height: 600px;
 }
 @media screen and (max-width: 600px) {
   .hero_container {
