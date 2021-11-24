@@ -41,7 +41,7 @@ btnColorBlue.addEventListener('click', function() {
 
 // **** SHOW SCROLL ****
 // =====================
-const ratio = .5;
+const ratio = .2;
 const options = {
     root: null,
     rootMargin: '0px',
