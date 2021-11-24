@@ -1,2 +1,3 @@
+Sitemap: http://matteo.courqu.in/sitemap.xml/
 User-agent: *
 Disallow: 
