@@ -1,6 +1,14 @@
+// **** LOADER ****
+// ================
+const loader = document.querySelector('.loader')
+
+window.addEventListener('load', () => {
+    loader.classList.add('remove');
+})
+
+
 // **** PROGRESSION LINE TOP ****
 // ==============================
-
 window.onload = () => {
     window.addEventListener('scroll', () => {
         let hauteur = document.documentElement.scrollHeight - window.innerHeight;

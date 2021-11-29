@@ -152,6 +152,42 @@ button:hover:before {
   display: none;
 }
 
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: var(--black);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader svg {
+  width: 80px;
+  padding-left: 15px;
+}
+@media screen and (max-width: 600px) {
+  .loader svg {
+    display: none;
+  }
+}
+.loader svg path {
+  stroke: var(--mainColor);
+  animation: complete_line 4s ease-out forwards;
+}
+.loader svg path:nth-child(1) {
+  stroke-dasharray: 1000px;
+  stroke-dashoffset: 1000px;
+}
+.loader svg path:nth-child(2) {
+  stroke-dasharray: 700px;
+  stroke-dashoffset: 700px;
+}
+
+.loader.remove {
+  display: none;
+}
+
 #barre {
   height: 5px;
   position: fixed;
