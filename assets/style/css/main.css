@@ -152,6 +152,16 @@ button:hover:before {
   display: none;
 }
 
+.card {
+  border: 1px solid var(--white);
+  box-shadow: 5px 5px var(--mainColor);
+  padding: 20px;
+}
+.card h3 {
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+
 .loader {
   width: 100%;
   height: 100%;
@@ -417,19 +427,11 @@ nav .liste_nav .item_nav {
   }
 }
 .iDo_container .iDo_items {
-  border: 1px solid var(--white);
-  box-shadow: 5px 5px var(--mainColor);
   padding: 20px;
-}
-.iDo_container .iDo_items h3 {
-  margin: 0 10px;
-  padding-bottom: 10px;
 }
 
 .about .about_item {
   padding: 50px;
-  border: 1px solid var(--white);
-  box-shadow: 5px 5px var(--mainColor);
   margin: 0 4vw;
 }
 @media screen and (max-width: 600px) {

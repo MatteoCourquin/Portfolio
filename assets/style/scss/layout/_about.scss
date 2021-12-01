@@ -4,8 +4,6 @@
 .about{
     .about_item{
         padding: 50px;
-        border: 1px solid var(--white);
-        box-shadow: 5px 5px var(--mainColor);
         margin: 0 4vw;
         @include m {
             padding: 30px;
