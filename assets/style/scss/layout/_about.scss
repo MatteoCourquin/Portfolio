@@ -3,18 +3,18 @@
 
 .about{
     .about_item{
-        padding: 30px 80px;
+        padding: 50px;
+        border: 1px solid var(--white);
+        box-shadow: 5px 5px var(--mainColor);
+        margin: 0 4vw;
         @include m {
-            padding: 30px 30px;
+            padding: 30px;
         }
     }
     a, button{
         display: inline-block;
     }
     .button-cv{
-        margin-left: 80px;
-        @include m {
-            padding-left: 30px;
-        }
+        margin: 30px 0;
     }
 }

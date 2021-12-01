@@ -5,15 +5,20 @@
     padding: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 4vw;
     gap: 30px;
-    @include m {
+    @include l {
         grid-template-columns: 1fr;
     }
-    @include m {
+    @include l {
         padding: 30px;
     }
     .iDo_items{
+        border: 1px solid var(--white);
+        box-shadow: 5px 5px var(--mainColor);
+        padding: 20px;
         h3{
+            margin: 0 10px;
             padding-bottom: 10px;
         }
     }

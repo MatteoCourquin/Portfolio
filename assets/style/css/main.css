@@ -403,40 +403,45 @@ nav .liste_nav .item_nav {
   padding: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 4vw;
   gap: 30px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .iDo_container {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .iDo_container {
     padding: 30px;
   }
 }
+.iDo_container .iDo_items {
+  border: 1px solid var(--white);
+  box-shadow: 5px 5px var(--mainColor);
+  padding: 20px;
+}
 .iDo_container .iDo_items h3 {
+  margin: 0 10px;
   padding-bottom: 10px;
 }
 
 .about .about_item {
-  padding: 30px 80px;
+  padding: 50px;
+  border: 1px solid var(--white);
+  box-shadow: 5px 5px var(--mainColor);
+  margin: 0 4vw;
 }
 @media screen and (max-width: 600px) {
   .about .about_item {
-    padding: 30px 30px;
+    padding: 30px;
   }
 }
 .about a, .about button {
   display: inline-block;
 }
 .about .button-cv {
-  margin-left: 80px;
-}
-@media screen and (max-width: 600px) {
-  .about .button-cv {
-    padding-left: 30px;
-  }
+  margin: 30px 0;
 }
 
 @media screen and (max-width: 600px) {
