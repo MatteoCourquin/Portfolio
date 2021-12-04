@@ -43,7 +43,7 @@ nav{
         .item_nav{
             list-style-type: none;
             padding: 0 20px 0 20px;
-            cursor: pointer;
+            // cursor: pointer;
             @include m {
                 margin-bottom: 10px;
                 padding: 5px;

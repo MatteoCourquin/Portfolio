@@ -8,6 +8,7 @@
 body {
   font-size: 62.5%;
   background-color: var(--black);
+  cursor: none;
 }
 
 :root {
@@ -86,7 +87,7 @@ a {
   text-decoration: none;
   font-size: 2em;
   padding: 0;
-  cursor: pointer;
+  cursor: none;
 }
 a::after {
   content: "";
@@ -118,7 +119,7 @@ button {
   width: auto;
   padding: 8px 30px;
   border: none;
-  cursor: pointer;
+  cursor: none;
   color: var(--white);
 }
 button:after, button:before {
@@ -162,6 +163,54 @@ button:hover:before {
   padding-bottom: 10px;
 }
 
+.new-cursor {
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border: 1px dashed var(--white);
+  border-radius: 50%;
+  position: absolute;
+  animation: Anim1 1s infinite alternate;
+  pointer-events: none;
+}
+.new-cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  background: var(--mainColor);
+  border-radius: 50%;
+}
+
+.expand {
+  animation: Anim2 0.5s;
+  background: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
+
+@keyframes Anim1 {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    transform: scale(0.7) rotate(190deg);
+  }
+}
+@keyframes Anim2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
 .loader {
   width: 100%;
   height: 100%;
@@ -220,7 +269,6 @@ button:hover:before {
   border-radius: 10px;
   padding: 0;
   margin: 0 10px;
-  cursor: pointer;
 }
 .change-color-container .violet {
   background: #9984D4;
@@ -279,7 +327,6 @@ nav .liste_nav {
 nav .liste_nav .item_nav {
   list-style-type: none;
   padding: 0 20px 0 20px;
-  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   nav .liste_nav .item_nav {
