@@ -39,6 +39,7 @@ window.onload = () => {
     });
 };
 
+
 // **** COLOR ****
 // ===============
 let root = document.documentElement;
@@ -62,7 +63,6 @@ btnColorPink.addEventListener('click', function(){
 btnColorBlue.addEventListener('click', function() {
     changeColor("#0075F2")
 });
-
 
 
 // **** SHOW SCROLL ****
@@ -89,6 +89,19 @@ document.querySelectorAll('[class*="anim_scroll"]').forEach(function(r){
     observer.observe(r);
 })
 
+
+
+// // **** ANIM TXT WRITTER ****
+// // ==========================
+// const txtReplace = document.querySelector('.anim-txt-writter');
+
+// new Typewriter(txtReplace, {
+
+// })
+// .typeString('<strong>HTML</strong>')
+// .pauseFor(300)
+// .typeString('JavaScript')
+// .start()
 
 
 
