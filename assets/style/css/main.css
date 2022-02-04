@@ -185,6 +185,10 @@ button:hover:before {
   border-radius: 50%;
 }
 
+p::selection {
+  background-color: var(--mainColor);
+}
+
 .expand {
   animation: Anim2 0.5s;
   background: var(--mainColor);
@@ -394,6 +398,9 @@ nav .liste_nav .item_nav {
 .hero_container .hero .title p span {
   font-family: var(--indie);
 }
+.hero_container .hero .title p span::selection {
+  background-color: var(--mainColor);
+}
 .hero_container .hero .title .title_effect {
   position: relative;
 }
@@ -402,6 +409,9 @@ nav .liste_nav .item_nav {
   color: var(--mainColor);
   font-family: var(--chivo);
   font-size: 7vw;
+}
+.hero_container .hero .title .title_effect h1::selection {
+  background-color: var(--white);
 }
 @media screen and (max-width: 600px) {
   .hero_container .hero .title .title_effect h1 {
@@ -417,6 +427,9 @@ nav .liste_nav .item_nav {
   -webkit-text-stroke-color: var(--white);
   transform: translate(5px, 5px);
 }
+.hero_container .hero .title .title_effect .shadow_effect::selection {
+  background: none;
+}
 @media screen and (max-width: 600px) {
   .hero_container .hero .title .title_effect .shadow_effect {
     font-size: 10vw;
@@ -424,6 +437,9 @@ nav .liste_nav .item_nav {
 }
 .hero_container img {
   width: 100%;
+}
+.hero_container img::selection {
+  background-color: none;
 }
 @media screen and (max-width: 600px) {
   .hero_container img {

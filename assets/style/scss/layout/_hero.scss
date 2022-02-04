@@ -45,6 +45,9 @@
                 }
                 span{
                     font-family: var(--indie);
+                    &::selection{
+                        background-color: var(--mainColor);
+                    }
                 }
             }
             .title_effect{
@@ -54,6 +57,9 @@
                     color: var(--mainColor);
                     font-family: var(--chivo);
                     font-size: 7vw;
+                    &::selection{
+                        background-color: var(--white);
+                    }
                     @include m {
                         font-size: 10vw;
                     }
@@ -66,6 +72,9 @@
                     -webkit-text-stroke: 1px;
                     -webkit-text-stroke-color: var(--white);
                     transform: translate(5px, 5px);
+                    &::selection{
+                        background: none;
+                    }
                     @include m {
                         font-size: 10vw;
                     }
@@ -76,6 +85,9 @@
 
     img{
         width: 100%;
+        &::selection{
+            background-color: none;
+        }
         @include m {
             display: none;
         }

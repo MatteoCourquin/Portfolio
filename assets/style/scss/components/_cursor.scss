@@ -20,6 +20,10 @@
     }
 }
 
+p::selection{
+    background-color: var(--mainColor);
+}
+
 .expand {
     animation: Anim2 .5s;
     background: var(--mainColor);
