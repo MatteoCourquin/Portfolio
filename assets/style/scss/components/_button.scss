@@ -53,3 +53,8 @@ button {
         }
     }
 }
+
+.axeptio_mount *, .axeptio_mount ::before, .axeptio_mount ::after {
+    box-sizing: border-box;
+    content: none;
+}

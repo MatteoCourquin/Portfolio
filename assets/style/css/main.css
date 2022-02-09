@@ -153,6 +153,11 @@ button:hover:before {
   display: none;
 }
 
+.axeptio_mount *, .axeptio_mount ::before, .axeptio_mount ::after {
+  box-sizing: border-box;
+  content: none;
+}
+
 .card {
   border: 1px solid var(--white);
   box-shadow: 5px 5px var(--mainColor);
