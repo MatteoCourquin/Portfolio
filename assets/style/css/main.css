@@ -1,26 +1,3 @@
-*, *::after, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-size: 62.5%;
-  background-color: var(--black);
-  cursor: none;
-}
-
-:root {
-  --mainColor: #0075F2;
-  --white: #f1f1F1;
-  --black: #000;
-  --chivo: "Chivo", sans-serif;
-  --roboto: "Roboto", sans-serif;
-  --indie: "Indie Flower", cursive;
-  --transition: 0.3s;
-}
-
 @keyframes show_skills_left {
   0% {
     opacity: 0;
@@ -46,11 +23,24 @@ body {
     stroke-dashoffset: 0;
   }
 }
+*, *::after, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: #000;
+  cursor: none;
+}
+
 h2 {
   font-family: "Chivo", sans-serif;
   padding-top: 80px;
   font-size: 3rem;
-  color: var(--mainColor);
+  color: #0075F2;
   margin: 50px;
 }
 @media screen and (max-width: 600px) {
@@ -60,21 +50,21 @@ h2 {
 }
 
 h3 {
-  color: var(--white);
+  color: #f1f1F1;
   font-family: "Roboto", sans-serif;
   font-size: 4em;
   font-weight: 400;
 }
 
 h3 {
-  color: var(--white);
+  color: #f1f1F1;
   font-family: "Roboto", sans-serif;
   font-size: 4em;
   font-weight: 400;
 }
 
 p, .p {
-  color: var(--white);
+  color: #f1f1F1;
   text-align: justify;
   font-family: "Roboto", sans-serif;
   font-size: 1.8em;
@@ -82,8 +72,8 @@ p, .p {
 }
 
 a {
-  color: var(--white);
-  font-family: var(--roboto);
+  color: #f1f1F1;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-size: 2em;
   padding: 0;
@@ -96,7 +86,7 @@ a::after {
   margin: 2px auto 0 auto;
   height: 1px;
   border-radius: 2px;
-  background: var(--mainColor);
+  background: #0075F2;
   transition: width 0.2s ease-out;
 }
 a:hover::after {
@@ -104,52 +94,52 @@ a:hover::after {
 }
 
 .txt-link {
-  color: var(--white);
+  color: #f1f1F1;
   text-align: justify;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   display: inline-block;
   font-weight: 100;
-  color: var(--mainColor);
+  color: #0075F2;
 }
 
 button {
   transform: translate(0, 0);
-  background: var(--mainColor);
+  background: #0075F2;
   width: auto;
   padding: 8px 30px;
   border: none;
   cursor: none;
-  color: var(--white);
+  color: #f1f1F1;
 }
 button:after, button:before {
-  transition: var(--transition);
+  transition: 0.3s;
   position: absolute;
   top: 100%;
   content: "";
 }
 button:before {
-  transition: var(--transition);
-  background: var(--white);
+  transition: 0.3s;
+  background: #f1f1F1;
   top: 3px;
   right: -3px;
   height: 100%;
   width: 3px;
 }
 button:after {
-  transition: var(--transition);
+  transition: 0.3s;
   width: 100%;
-  background: var(--white);
+  background: #f1f1F1;
   right: 0px;
   left: 3px;
   height: 3px;
 }
 button:hover:after, button:hover:before {
-  transition: var(--transition);
+  transition: 0.3s;
   display: none;
 }
 button:hover:before {
-  transition: var(--transition);
+  transition: 0.3s;
   display: none;
 }
 
@@ -159,8 +149,8 @@ button:hover:before {
 }
 
 .card {
-  border: 1px solid var(--white);
-  box-shadow: 5px 5px var(--mainColor);
+  border: 1px solid #f1f1F1;
+  box-shadow: 5px 5px #0075F2;
   padding: 20px;
 }
 .card h3 {
@@ -172,7 +162,7 @@ button:hover:before {
   z-index: 9999;
   width: 40px;
   height: 40px;
-  border: 1px dashed var(--white);
+  border: 1px dashed #f1f1F1;
   border-radius: 50%;
   position: absolute;
   animation: Anim1 1s infinite alternate;
@@ -186,18 +176,18 @@ button:hover:before {
   transform: translate(-50%, -50%);
   width: 5px;
   height: 5px;
-  background: var(--mainColor);
+  background: #0075F2;
   border-radius: 50%;
 }
 
 p::selection {
-  background-color: var(--mainColor);
+  background-color: #0075F2;
 }
 
 .expand {
   animation: Anim2 0.5s;
-  background: var(--mainColor);
-  border: 1px solid var(--mainColor);
+  background: #0075F2;
+  border: 1px solid #0075F2;
 }
 
 @keyframes Anim1 {
@@ -224,7 +214,7 @@ p::selection {
   width: 100%;
   height: 100%;
   position: fixed;
-  background: var(--black);
+  background: #000;
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -240,7 +230,7 @@ p::selection {
   }
 }
 .loader svg path {
-  stroke: var(--mainColor);
+  stroke: #0075F2;
   animation: complete_line 4s ease-out forwards;
 }
 .loader svg path:nth-child(1) {
@@ -261,7 +251,7 @@ p::selection {
   position: fixed;
   z-index: 999;
   bottom: top;
-  background: var(--mainColor);
+  background: #0075F2;
 }
 
 .change-color-container {
@@ -297,7 +287,7 @@ nav {
   z-index: 99;
   position: fixed;
   width: 100%;
-  background-color: var(--black);
+  background-color: #000;
 }
 nav svg {
   width: 80px;
@@ -309,7 +299,7 @@ nav svg {
   }
 }
 nav svg path {
-  stroke: var(--mainColor);
+  stroke: #0075F2;
   animation: complete_line 4s ease-out forwards;
 }
 nav svg path:nth-child(1) {
@@ -330,7 +320,7 @@ nav .liste_nav {
     left: 50%;
     transform: translate(-50%);
     top: 10px;
-    background: var(--black);
+    background: #000;
   }
 }
 nav .liste_nav .item_nav {
@@ -372,27 +362,27 @@ nav .liste_nav .item_nav {
 .hero_container .hero .lines .line1 {
   width: 1px;
   height: 20vh;
-  background: var(--white);
+  background: #f1f1F1;
 }
 .hero_container .hero .lines .round {
   width: 20px;
   height: 20px;
   margin: 20px 0;
   border-radius: 99px;
-  border: 1px solid var(--white);
+  border: 1px solid #f1f1F1;
 }
 .hero_container .hero .lines .line2 {
   width: 1px;
   height: 20vh;
-  background: var(--white);
+  background: #f1f1F1;
 }
 .hero_container .hero .title {
   margin-left: 20px;
   transform: translateY(-200%);
 }
 .hero_container .hero .title p {
-  color: var(--white);
-  font-family: var(--roboto);
+  color: #f1f1F1;
+  font-family: "Roboto", sans-serif;
   font-size: 3.4vw;
 }
 @media screen and (max-width: 600px) {
@@ -401,22 +391,22 @@ nav .liste_nav .item_nav {
   }
 }
 .hero_container .hero .title p span {
-  font-family: var(--indie);
+  font-family: "Indie Flower", cursive;
 }
 .hero_container .hero .title p span::selection {
-  background-color: var(--mainColor);
+  background-color: #0075F2;
 }
 .hero_container .hero .title .title_effect {
   position: relative;
 }
 .hero_container .hero .title .title_effect h1 {
   position: absolute;
-  color: var(--mainColor);
-  font-family: var(--chivo);
+  color: #0075F2;
+  font-family: "Chivo", sans-serif;
   font-size: 7vw;
 }
 .hero_container .hero .title .title_effect h1::selection {
-  background-color: var(--white);
+  background-color: #f1f1F1;
 }
 @media screen and (max-width: 600px) {
   .hero_container .hero .title .title_effect h1 {
@@ -425,11 +415,11 @@ nav .liste_nav .item_nav {
 }
 .hero_container .hero .title .title_effect .shadow_effect {
   position: absolute;
-  font-family: var(--chivo);
+  font-family: "Chivo", sans-serif;
   font-size: 7vw;
   color: transparent;
   -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: var(--white);
+  -webkit-text-stroke-color: #f1f1F1;
   transform: translate(5px, 5px);
 }
 .hero_container .hero .title .title_effect .shadow_effect::selection {
@@ -525,14 +515,14 @@ nav .liste_nav .item_nav {
   }
 }
 .skills .skills_container svg {
-  fill: var(--white);
+  fill: #f1f1F1;
   width: 80px;
-  stroke: var(--white);
+  stroke: #f1f1F1;
 }
 .skills .skills_container svg:hover {
-  transition: var(--transition);
-  fill: var(--mainColor);
-  stroke: var(--mainColor);
+  transition: 0.3s;
+  fill: #0075F2;
+  stroke: #0075F2;
 }
 .skills .skills_container_dev, .skills .skills_container_others {
   width: 100%;
@@ -579,7 +569,7 @@ nav .liste_nav .item_nav {
 .skills .separation {
   width: 90%;
   height: 1px;
-  background: var(--white);
+  background: #f1f1F1;
   margin: 40px 5%;
 }
 @media screen and (max-width: 600px) {
@@ -627,11 +617,11 @@ footer .contact a {
 }
 footer .contact svg {
   width: 40px;
-  fill: var(--white);
+  fill: #f1f1F1;
 }
 footer .contact svg:hover {
   transition: 0.3s;
-  fill: var(--mainColor);
+  fill: #0075F2;
 }
 
 /*# sourceMappingURL=main.css.map */

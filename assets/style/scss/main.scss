@@ -1,12 +1,13 @@
-// **** RESET **** //
-// =============== //
-@import "./base/reset";
 
 // **** VARIABLES **** //
 // =================== //
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./abstracts/functions";
+
+// **** RESET **** //
+// =============== //
+@import "./base/reset";
 
 // **** COMPONENTS **** //
 // ==================== //

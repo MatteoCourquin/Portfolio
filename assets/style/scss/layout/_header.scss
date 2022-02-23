@@ -6,7 +6,7 @@
     position: fixed;
     z-index: 999;
     bottom: top;
-    background: var(--mainColor);
+    background: $color-main;
 }
 
 .change-color-container{

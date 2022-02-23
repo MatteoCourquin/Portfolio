@@ -15,10 +15,10 @@ footer{
         }
         svg{
             width: 40px;
-            fill: var(--white);
+            fill: $color-white;
             &:hover{
                 transition: 0.3s;
-                fill: var(--mainColor);
+                fill: $color-main;
             }
         }
     }

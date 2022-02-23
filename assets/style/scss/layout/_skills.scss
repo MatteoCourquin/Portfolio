@@ -12,14 +12,14 @@
             }
         }
         svg{
-            fill: var(--white);
+            fill: $color-white;
             width: 80px;
-            stroke: var(--white);
+            stroke: $color-white;
             // cursor: pointer;
             &:hover{
-                transition: var(--transition);
-                fill: var(--mainColor);
-                stroke: var(--mainColor);
+                transition: $transition;
+                fill: $color-main;
+                stroke: $color-main;
             }
         }
     }
@@ -61,7 +61,7 @@
     }
     .separation{
         @include size(90%, 1px);
-        background: var(--white);
+        background: $color-white;
         margin: 40px 5%;
         @include m {
             @include size(1px, 600px);

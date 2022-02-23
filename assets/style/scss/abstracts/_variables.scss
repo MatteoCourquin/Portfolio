@@ -1,12 +1,13 @@
 // **** VARIABLES **** //
 // =================== //
 
-:root{ 
-    --mainColor: #0075F2;
-    --white: #f1f1F1;
-    --black: #000;
-    --chivo: 'Chivo', sans-serif;
-    --roboto: 'Roboto', sans-serif;
-    --indie: 'Indie Flower', cursive;
-    --transition: 0.3s;
-}
+
+$color-main: #0075F2;
+$color-white: #f1f1F1;
+$color-black: #000;
+
+$font-chivo: 'Chivo', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-indie: 'Indie Flower', cursive;
+
+$transition: 0.3s;

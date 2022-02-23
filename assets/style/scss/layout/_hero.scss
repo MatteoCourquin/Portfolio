@@ -20,33 +20,33 @@
             margin-left: 40px;
             .line1{
                 @include size(1px, 20vh);
-                background: var(--white);
+                background: $color-white;
             }
             .round{
                 @include size(20px, 20px);
                 margin: 20px 0;
                 border-radius: 99px;
-                border: 1px solid var(--white);
+                border: 1px solid $color-white;
             }
             .line2{
                 @include size(1px, 20vh);
-                background: var(--white);
+                background: $color-white;
             }
         }
         .title{
             margin-left: 20px;
             transform: translateY(-200%);
             p{
-                color: var(--white);
-                font-family: var(--roboto);
+                color: $color-white;
+                font-family: $font-roboto;
                 font-size: 3.4vw;
                 @include m {
                     font-size: 5vw;
                 }
                 span{
-                    font-family: var(--indie);
+                    font-family: $font-indie;
                     &::selection{
-                        background-color: var(--mainColor);
+                        background-color: $color-main;
                     }
                 }
             }
@@ -54,11 +54,11 @@
                 position: relative;
                 h1{
                     position: absolute;
-                    color: var(--mainColor);
-                    font-family: var(--chivo);
+                    color: $color-main;
+                    font-family: $font-chivo;
                     font-size: 7vw;
                     &::selection{
-                        background-color: var(--white);
+                        background-color: $color-white;
                     }
                     @include m {
                         font-size: 10vw;
@@ -66,11 +66,11 @@
                 }
                 .shadow_effect{
                     position: absolute;
-                    font-family: var(--chivo);
+                    font-family: $font-chivo;
                     font-size: 7vw;
                     color: transparent;
                     -webkit-text-stroke: 1px;
-                    -webkit-text-stroke-color: var(--white);
+                    -webkit-text-stroke-color: $color-white;
                     transform: translate(5px, 5px);
                     &::selection{
                         background: none;

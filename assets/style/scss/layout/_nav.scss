@@ -9,7 +9,7 @@ nav{
     z-index: 99;
     position: fixed;
     width: 100%;
-    background-color: var(--black);
+    background-color: $color-black;
     // background: linear-gradient(rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0));
     svg {
         width: 80px;
@@ -18,7 +18,7 @@ nav{
             display: none;
         }
         path{
-            stroke: var(--mainColor);
+            stroke: $color-main;
             animation: complete_line 4s ease-out forwards;
             &:nth-child(1) { 
                 stroke-dasharray: 1000px;
@@ -38,7 +38,7 @@ nav{
             left: 50%;
             transform: translate(-50%);
             top: 10px;
-            background: var(--black);
+            background: $color-black;
         }
         .item_nav{
             list-style-type: none;

@@ -3,8 +3,8 @@
 
 
 .card{
-    border: 1px solid var(--white);
-    box-shadow: 5px 5px var(--mainColor);
+    border: 1px solid $color-white;
+    box-shadow: 5px 5px $color-main;
     padding: 20px;
     h3{
         margin: 0 10px;

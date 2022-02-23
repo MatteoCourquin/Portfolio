@@ -2,37 +2,37 @@
 // ============= //
 
 h2{
-    font-family: 'Chivo', sans-serif;
+    font-family: $font-chivo;
     padding-top: 80px;
     font-size: 3rem;
-    color: var(--mainColor);
+    color: $color-main;
     margin: 50px;
     @media screen and (max-width:600px) {
         font-size: 4em;
     }
 }
 h3{
-    color: var(--white);
-    font-family: 'Roboto', sans-serif;
+    color: $color-white;
+    font-family: $font-roboto;
     font-size: 4em;
     font-weight: 400;
 }
 h3{
-    color: var(--white);
-    font-family: 'Roboto', sans-serif;
+    color: $color-white;
+    font-family: $font-roboto;
     font-size: 4em;
     font-weight: 400;
 }
 p, .p{
-    color: var(--white);
+    color: $color-white;
     text-align: justify;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     font-size: 1.8em;
     font-weight: 100;
 }
 a{
-    color: var(--white);
-    font-family: var(--roboto);
+    color: $color-white;
+    font-family: $font-roboto;
     text-decoration: none;
     font-size: 2em;
     padding: 0;
@@ -44,7 +44,7 @@ a{
         margin: 2px auto 0 auto;
         height: 1px;
         border-radius: 2px;
-        background: var(--mainColor);
+        background: $color-main;
         transition: width 0.2s ease-out;
     }
     &:hover::after{
@@ -52,11 +52,11 @@ a{
     }
 }
 .txt-link{
-    color: var(--white);
+    color: $color-white;
     text-align: justify;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     font-size: 1em;
     display: inline-block;
     font-weight: 100;
-    color: var(--mainColor);
+    color: $color-main;
 }
