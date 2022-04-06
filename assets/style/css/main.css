@@ -94,6 +94,9 @@ a:hover::after {
 }
 
 .txt-link {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
   color: #f1f1F1;
   text-align: justify;
   font-family: "Roboto", sans-serif;
@@ -430,11 +433,28 @@ nav .liste_nav .item_nav {
     font-size: 10vw;
   }
 }
+.hero_container iframe {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 50vw;
+}
+@media screen and (max-width: 1800px) {
+  .hero_container iframe {
+    display: none;
+  }
+}
 .hero_container img {
   width: 100%;
+  display: none;
 }
 .hero_container img::selection {
   background-color: none;
+}
+@media screen and (max-width: 1800px) {
+  .hero_container img {
+    display: block;
+  }
 }
 @media screen and (max-width: 600px) {
   .hero_container img {

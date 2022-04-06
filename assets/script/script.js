@@ -79,7 +79,6 @@ const show_scroll = function (entries, observer) {
         if (entry.intersectionRatio > ratio) {
             entry.target.classList.add('show_scroll')
             observer.unobserve(entry.target)
-                console.log('visible');
         }
     })
 }
@@ -122,6 +121,18 @@ logoDev.forEach(item => {
         });
     })
 });
+
+
+
+// **** HowManyTimeToCode ****
+// ===========================
+// let HowManyTimeToCode = document.querySelector('.howManyTimeToCode');
+// var date1 = new Date("01/01/2020"); 
+// var date2 = new Date("07/04/2020"); 
+// var Diff_temps = date2.getTime() - date1.getTime(); 
+// var Diff_jours = Diff_temps / (1000 * 3600 * 24); 
+// alert("Le nombre de jours entre les deux dates est de " + Math.round(Diff_jours) + " jours"); 
+
 
 
 

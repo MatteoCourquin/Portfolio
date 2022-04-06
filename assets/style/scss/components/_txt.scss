@@ -52,6 +52,9 @@ a{
     }
 }
 .txt-link{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
     color: $color-white;
     text-align: justify;
     font-family: $font-roboto;

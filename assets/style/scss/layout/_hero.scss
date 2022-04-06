@@ -83,10 +83,24 @@
         }
     }
 
+    iframe{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        width: 50vw;
+        @media screen and (max-width : 1800px) {   
+            display: none;
+        }
+    }
+
     img{
         width: 100%;
+        display: none;
         &::selection{
             background-color: none;
+        }
+        @media screen and (max-width : 1800px) {   
+            display: block;
         }
         @include m {
             display: none;
