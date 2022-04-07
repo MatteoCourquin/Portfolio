@@ -52,18 +52,6 @@
             }
             .title_effect{
                 position: relative;
-                h1{
-                    position: absolute;
-                    color: $color-main;
-                    font-family: $font-chivo;
-                    font-size: 7vw;
-                    &::selection{
-                        background-color: $color-white;
-                    }
-                    @include m {
-                        font-size: 10vw;
-                    }
-                }
                 .shadow_effect{
                     position: absolute;
                     font-family: $font-chivo;

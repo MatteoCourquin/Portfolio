@@ -8,8 +8,11 @@
     scroll-behavior: smooth;
 }
 
-body{
+html{
     font-size: 62.5%;
     background-color: $color-black;
+    cursor: none;
+}
+body{
     cursor: none;
 }

@@ -1,6 +1,18 @@
 // **** TXT **** //
 // ============= //
 
+h1{
+    position: absolute;
+    color: $color-main;
+    font-family: $font-chivo;
+    font-size: 7vw;
+    &::selection{
+        background-color: $color-white;
+    }
+    @include m {
+        font-size: 10vw;
+    }
+}
 h2{
     font-family: $font-chivo;
     padding-top: 80px;

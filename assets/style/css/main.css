@@ -30,10 +30,29 @@
   scroll-behavior: smooth;
 }
 
-body {
+html {
   font-size: 62.5%;
   background-color: #000;
   cursor: none;
+}
+
+body {
+  cursor: none;
+}
+
+h1 {
+  position: absolute;
+  color: #0075F2;
+  font-family: "Chivo", sans-serif;
+  font-size: 7vw;
+}
+h1::selection {
+  background-color: #f1f1F1;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 10vw;
+  }
 }
 
 h2 {
@@ -213,6 +232,20 @@ p::selection {
     opacity: 0;
   }
 }
+.container-404 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-404 h1 {
+  position: relative;
+}
+
 .loader {
   width: 100%;
   height: 100%;
@@ -401,20 +434,6 @@ nav .liste_nav .item_nav {
 }
 .hero_container .hero .title .title_effect {
   position: relative;
-}
-.hero_container .hero .title .title_effect h1 {
-  position: absolute;
-  color: #0075F2;
-  font-family: "Chivo", sans-serif;
-  font-size: 7vw;
-}
-.hero_container .hero .title .title_effect h1::selection {
-  background-color: #f1f1F1;
-}
-@media screen and (max-width: 600px) {
-  .hero_container .hero .title .title_effect h1 {
-    font-size: 10vw;
-  }
 }
 .hero_container .hero .title .title_effect .shadow_effect {
   position: absolute;
