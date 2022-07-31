@@ -387,7 +387,7 @@ nav .liste_nav .item_nav {
 }
 .hero_container .hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .hero_container .hero .lines {
   display: flex;
@@ -426,14 +426,9 @@ nav .liste_nav .item_nav {
     font-size: 5vw;
   }
 }
-.hero_container .hero .title p span {
-  font-family: "Indie Flower", cursive;
-}
-.hero_container .hero .title p span::selection {
-  background-color: #0075F2;
-}
 .hero_container .hero .title .title_effect {
   position: relative;
+  top: 10vh;
 }
 .hero_container .hero .title .title_effect .shadow_effect {
   position: absolute;

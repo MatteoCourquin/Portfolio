@@ -98,24 +98,6 @@ document.querySelectorAll('[class*="anim_scroll"]').forEach(function (r) {
 // .typeString('JavaScript')
 // .start()
 
-// **** SHOW SKILLS ****
-// =====================
-const logoDev = document.querySelectorAll(".skills_items");
-let detailSkills = document.querySelectorAll(".details_skills");
-
-function hello() {
-    detailSkills.forEach((itemSkills) => {
-        itemSkills.classList.add("active");
-    });
-}
-logoDev.forEach((item) => {
-    item.addEventListener("mouseenter", function () {
-        detailSkills.forEach((itemSkills) => {
-            itemSkills.classList.add("active");
-        });
-    });
-});
-
 // **** HowManyTimeToCode ****
 // ===========================
 // let HowManyTimeToCode = document.querySelector('.howManyTimeToCode');

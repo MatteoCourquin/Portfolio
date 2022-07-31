@@ -11,7 +11,7 @@
     }
     .hero{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
 
         .lines{
             display: flex;
@@ -43,15 +43,10 @@
                 @include m {
                     font-size: 5vw;
                 }
-                span{
-                    font-family: $font-indie;
-                    &::selection{
-                        background-color: $color-main;
-                    }
-                }
             }
             .title_effect{
                 position: relative;
+                top: 10vh;
                 .shadow_effect{
                     position: absolute;
                     font-family: $font-chivo;
